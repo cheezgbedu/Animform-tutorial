@@ -1,0 +1,184 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html{
+    background-color: #5dbae3;
+}
+body{
+    font-family: 'Poppins',sans-serif;
+    height: 10vh;
+}
+a{
+    color:#5dbae3;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 400;
+}
+a:hover{
+    color:#0d0d0d;
+}
+h2{
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    display:inline-block;
+    margin: 40px 8px 10px 0px;
+    color: #cccccc;
+}
+/*Structure*/
+.wrapper{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width:100%;
+    min-height: 100%;
+    padding:20px;
+
+}
+#formcontent{
+    -webkit-border-radius:10px 10px 10px 10px;
+    border-radius: 10px 10px 10px 10px;
+    padding:30px;
+    width: 90%;
+    max-width: 450px;
+    position:relative;
+    background-color: #ffff;
+    -webkit-box-shadow: 0 30px 60px 0 rgba(0, 0, 0,0.3);
+    box-shadow: 0 30px 60px 0 rgba(0, 0, 0,0.3);
+    text-align: center;
+}
+#footer{
+    background-color: #f6f6f6;
+    border-top: 1px solid #dce8f1;
+    padding:25px;
+    text-align: center;
+    -webkit-border-radius: 0 0 10px 10px;
+    border-radius: 0 0 10px 10px;
+
+}
+/*Tabs */
+h2.inactive{
+    color: black;
+
+}
+h2.active{
+    color:brown;
+    border-bottom: 2px solid #5fbae9;
+}
+/*Form Topography */
+input[type="submit"]{
+    background-color: #5dbae3;
+    padding:15px 80px;
+    color:white;
+    border:none;
+    display:inline-block;
+    text-transform: uppercase;
+    font-size: 13px;
+    -webkit-box-shadow: 0 10px 30px 0 rgba(96, 108, 223,0.4);
+    box-shadow: 0 10px 30px 0 rgba(96, 108, 223,0.4);
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+    margin: 3px 20px 40px 20px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transitiom: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover{
+    background-color: #39ace7;
+}
+input[type="button"]:active
+input[type="submit"]:active
+input[type="reset"]:active{
+    -webkit-transform: scale(0.95);
+    -moz-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    -o-transform:scale(0.95);
+    transform:scale(0.95);
+}
+input[type="text"]{
+    background-color: #f6f6f6;
+    border:none;
+    color: #0d0d0d;
+    padding:15px 32px;
+    text-decoration: none;
+    font-size: 16px;
+    margin:5px;
+    width:90%;
+    border:2px solid #f6f6f6;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transitiom: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px 5px 5px 5px;
+}
+input[type="password"]{
+    background-color:#f6f6f6;
+    border:none;
+    color: #0d0d0d;
+    padding:15px 32px;
+    text-decoration: none;
+    font-size: 16px;
+    margin:5px;
+    width:90%;
+    border:2px solid #f6f6f6;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transitiom: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px 5px 5px 5px;
+}
+p{
+    color:#0d0d0d;
+}
+input[type="password"]:focus{
+    background-color: #fff;
+    border-bottom: 2px solid #5fbae9;
+}
+
+/*Animations */
+/* Simple CSS FADE IN amimation */
+.fadein{
+    -webkit-animation-name: fadein;
+    animation-name:fadein;
+    -webkit-animation-duration: 3s;
+    -moz-animation-duration: 3s;
+    -ms-animation-duration: 3s;
+    -mz-animation-duration: 3s;
+    -o-animation-duration: 3s;
+    animation-duration: 3s;
+     -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    }
+@-webkit-keyframes fadein{
+    0%{
+        opacity:0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+    100%{
+        opacity:1;
+        -webkit-transform:none;
+        transform:none;
+    }
+}
+@keyframes fadein{
+    0%{
+        opacity:0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+    100%{
+        opacity:1;
+        -webkit-transform:none;
+        transform:none;
+    }
+}
